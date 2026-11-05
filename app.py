@@ -116,9 +116,7 @@ st.divider()
 
 st.header("🔗 Additional Resources")
 
-resources = [
-    # ("Quiz 1", "https://forms.gle/PWnUvpooct65LCW58"),
-]
+resources = [("Quiz 1", "https://forms.gle/PWnUvpooct65LCW58")]
 
 if resources:
     for name, url in resources:
