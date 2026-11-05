@@ -117,9 +117,7 @@ st.divider()
 st.header("🔗 Additional Resources")
 
 resources = [
-    # Add future links here:
-    # ("Course Notes", "https://example.com"),
-    # ("Python Notebooks", "https://example.com"),
+    # ("Quiz 1", "https://forms.gle/PWnUvpooct65LCW58"),
 ]
 
 if resources:
