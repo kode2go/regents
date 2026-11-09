@@ -61,15 +61,12 @@ st.write(
 
 st.header("📚 Course Resources")
 
-st.markdown("### 1. Datasets & Excel Files")
-
 st.write(
-    "Download datasets, Excel workbooks and practical "
-    "exercise files used during the masterclass."
+    "Download datasets, csv files, and other files"
 )
 
 st.link_button(
-    "📂 Open Datasets & Excel Files",
+    "📂 Open Resources",
     "https://drive.google.com/drive/folders/1OwNcr-S-oPfuuxNjBgiUAdVxvL2QBl0Y?usp=sharing",
     use_container_width=True
 )
