@@ -74,6 +74,37 @@ st.link_button(
 st.divider()
 
 # --------------------------------------------------
+# JupyterLab
+# --------------------------------------------------
+
+st.subheader("🐍 Try JupyterLab")
+
+st.write(
+    "Use JupyterLab to practise Python programming "
+    "and data analysis. Try it directly in your browser "
+    "without installing anything, or download it for Windows."
+)
+
+st.link_button(
+    "🌐 Try JupyterLab Online (No Installation)",
+    "https://jupyter.org/try-jupyter/lab/",
+    use_container_width=True
+)
+
+st.link_button(
+    "💻 Download JupyterLab for Windows",
+    "https://github.com/jupyterlab/jupyterlab-desktop/releases/download/v4.6.3-1/JupyterLab-Setup-Windows-x64.exe",
+    use_container_width=True
+)
+
+st.caption(
+    "💡 Beginners: Start with the online version. "
+    "For offline use, install the Windows desktop version."
+)
+
+st.divider()
+
+# --------------------------------------------------
 # Interactive analytics
 # --------------------------------------------------
 
