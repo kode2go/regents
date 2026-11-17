@@ -45,21 +45,13 @@ st.subheader(
     "and Understanding Consumer Behaviour (ADM)"
 )
 
-st.markdown("**Regent Business School**")
-
 st.divider()
-
-st.write(
-    "Welcome to the Masterclass 4 resource portal. "
-    "Access course materials, practical datasets, "
-    "Excel exercises and interactive data analytics tools."
-)
 
 # --------------------------------------------------
 # Course resources
 # --------------------------------------------------
 
-st.header("📚 Course Resources")
+st.header("📂 Course Resources")
 
 st.write(
     "Download datasets, csv files, and other files"
