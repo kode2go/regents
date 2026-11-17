@@ -54,18 +54,18 @@ st.divider()
 st.header("📂 Course Resources")
 
 st.write(
-    "Download datasets, csv files, and other files"
+    "Download excel files"
 )
 
 st.link_button(
-    "📥 Download retail_sales_messy.csv",
-    "https://drive.google.com/uc?export=download&id=1gxnCT3awwolU7Pe7fW_TyHgob_NtmpYv",
+    "📥 Download retail_sales_messy.xlsx",
+    "https://drive.google.com/uc?export=download&id=1IP33Q_vjPmHR8VJm0tObE1YS3PnEvQ36",
     use_container_width=True
 )
 
 st.link_button(
-    "📥 Download retail_sales_cleaned.csv",
-    "https://drive.google.com/uc?export=download&id=1y47BaDTmU2ereDUmbdKOlHj6vaRz5kWk",
+    "📥 Download retail_sales_cleaned.xlsx",
+    "https://drive.google.com/uc?export=download&id=1GLoT5jCYWqXk93M_zt1GDSxps_jXEEaQ",
     use_container_width=True
 )
 
