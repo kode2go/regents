@@ -70,6 +70,12 @@ st.link_button(
 )
 
 st.link_button(
+    "📥 Download retail_sales_2026.xlsx",
+    "https://drive.google.com/uc?export=download&id=1IhFQNzk7m9VWd8pcB31aiQtS7D7LDqht",
+    use_container_width=True
+)
+
+st.link_button(
     "📂 Open Resources",
     "https://drive.google.com/drive/folders/1OwNcr-S-oPfuuxNjBgiUAdVxvL2QBl0Y?usp=sharing",
     use_container_width=True
