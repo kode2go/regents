@@ -66,6 +66,18 @@ st.write(
 )
 
 st.link_button(
+    "📥 Download retail_sales_messy.csv",
+    "https://drive.google.com/uc?export=download&id=1gxnCT3awwolU7Pe7fW_TyHgob_NtmpYv",
+    use_container_width=True
+)
+
+st.link_button(
+    "📥 Download retail_sales_cleaned.csv",
+    "https://drive.google.com/uc?export=download&id=1y47BaDTmU2ereDUmbdKOlHj6vaRz5kWk",
+    use_container_width=True
+)
+
+st.link_button(
     "📂 Open Resources",
     "https://drive.google.com/drive/folders/1OwNcr-S-oPfuuxNjBgiUAdVxvL2QBl0Y?usp=sharing",
     use_container_width=True
