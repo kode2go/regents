@@ -58,6 +58,12 @@ st.write(
 )
 
 st.link_button(
+    "📥 Download sales.xlsx",
+    "https://drive.google.com/uc?export=download&id=1sAg6WH2A0CWqXJqk2mmrA27l8FUkLjFY",
+    use_container_width=True
+)
+
+st.link_button(
     "📥 Download retail_sales_messy.xlsx",
     "https://drive.google.com/uc?export=download&id=1IP33Q_vjPmHR8VJm0tObE1YS3PnEvQ36",
     use_container_width=True
