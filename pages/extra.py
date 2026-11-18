@@ -10,7 +10,7 @@ st.set_page_config(
 
 from sympy import symbols, Eq, solve
 
-st.title("🧮 Solving Equations with Python")
+st.title("🧮 Solving Equations with Python in JupyterLab")
 
 x, y = symbols("x y")
 
