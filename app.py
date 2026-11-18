@@ -87,9 +87,15 @@ st.link_button(
     use_container_width=True
 )
 
+#st.link_button(
+#    "📥 Download retail_sales_2026.xlsx",
+#    "https://drive.google.com/uc?export=download&id=1IhFQNzk7m9VWd8pcB31aiQtS7D7LDqht",
+#    use_container_width=True
+#)
+
 st.link_button(
-    "📥 Download retail_sales_2026.xlsx",
-    "https://drive.google.com/uc?export=download&id=1IhFQNzk7m9VWd8pcB31aiQtS7D7LDqht",
+    "📥 Download Retail Sales 2026 (CSV)",
+    "https://drive.google.com/uc?export=download&id=1jtvTcmR6bMXjHpmcXyaFjPSHPVJM732r",
     use_container_width=True
 )
 
