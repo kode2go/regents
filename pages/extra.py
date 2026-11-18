@@ -8,7 +8,6 @@ st.set_page_config(
     layout="wide"
 )
 
-import streamlit as st
 from sympy import symbols, Eq, solve
 
 st.title("🧮 Solving Equations with Python")
