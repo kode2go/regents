@@ -54,12 +54,18 @@ st.divider()
 st.header("📂 Course Resources")
 
 st.write(
-    "Download excel files"
+    "Download files"
 )
 
 st.link_button(
     "📥 Download sales.xlsx",
     "https://drive.google.com/uc?export=download&id=1sAg6WH2A0CWqXJqk2mmrA27l8FUkLjFY",
+    use_container_width=True
+)
+
+st.link_button(
+    "📥 Download sales_notebook.ipynb",
+    "https://drive.google.com/uc?export=download&id=1DJbvxhahDVEUfdIbWrs-t01SZuzIlECr",
     use_container_width=True
 )
 
