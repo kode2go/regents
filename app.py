@@ -133,6 +133,24 @@ st.caption(
 st.divider()
 
 # --------------------------------------------------
+# Streamlit analytics
+# --------------------------------------------------
+
+st.header("📈 Streamlit Resources")
+
+st.link_button(
+    "🚀 Open Streamlit",
+    "https://streamlit.io/",
+    use_container_width=True
+)
+
+st.link_button(
+    "📥 Download Johannesburg Image (jozi.png)",
+    "https://drive.google.com/uc?export=download&id=1h_3HUkYgOUTzlmKkxLzDoXycx11S2s9K",
+    use_container_width=True
+)
+
+# --------------------------------------------------
 # Interactive analytics
 # --------------------------------------------------
 
