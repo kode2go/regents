@@ -160,32 +160,84 @@ st.link_button(
 # Interactive analytics
 # --------------------------------------------------
 
-st.header("📈 Interactive Data Analytics")
+st.header("💻 Retail Analytics Dashboard - Python Code")
 
-st.write(
-    "Explore retail transaction datasets using our "
-    "interactive Exploratory Data Analysis (EDA) dashboard."
-)
+st.write("Copy the Python code below to create your own retail dashboard.")
 
-st.markdown(
-    """
-    With the EDA dashboard you can:
+code = '''
+import streamlit as st
+import pandas as pd
 
-    - Upload your own retail CSV dataset
-    - Filter transactions by store, product, category and date
-    - Explore sales, revenue, costs and profit
-    - Generate interactive charts and graphs
-    - View summary statistics
-    - Sort, explore and download filtered datasets
-    """
-)
+st.title("Retail Analytics Dashboard")
 
-st.page_link(
-    "pages/eda.py",
-    label="📊 Open Retail Data Analytics Dashboard",
-    icon="📈",
-    use_container_width=True
-)
+file = st.file_uploader("Upload CSV", type="csv")
+
+if file is None: st.stop()
+
+df = pd.read_csv(file)
+
+st.subheader("Dataset")
+st.dataframe(df)
+
+st.subheader("First 5 Rows")
+st.dataframe(df.head())
+
+st.subheader("Statistics")
+st.dataframe(df.describe())
+
+
+st.subheader("Retail Dashboard")
+
+st.metric("Total Revenue", df["Revenue_ZAR"].sum())
+
+st.metric("Total Transactions", len(df))
+
+st.metric("Items Sold", df["Quantity"].sum())
+
+st.metric("Average Revenue", round(df["Revenue_ZAR"].mean(), 2))
+
+
+st.subheader("Explore Your Data")
+
+columns = st.multiselect("Select Columns", df.columns, default=df.columns)
+
+category = st.selectbox("Select Category", df["Category"].unique())
+
+filtered = df[df["Category"] == category]
+
+st.dataframe(filtered[columns])
+
+
+st.subheader("Retail Sales Charts")
+
+# Bar chart - Revenue by Category
+st.write("Revenue by Category")
+sales = df.groupby("Category")["Revenue_ZAR"].sum()
+st.bar_chart(sales)
+
+# Line chart - Revenue by Date
+st.write("Revenue Over Time")
+sales = df.groupby("Date")["Revenue_ZAR"].sum()
+st.line_chart(sales)
+
+# Bar chart - Revenue by Store
+st.write("Revenue by Store")
+sales = df.groupby("Store")["Revenue_ZAR"].sum()
+st.bar_chart(sales)
+
+# Bar chart - Top 5 Products
+st.write("Top 5 Products")
+sales = df.groupby("Product")["Revenue_ZAR"].sum()
+sales = sales.sort_values(ascending=False).head(5)
+st.bar_chart(sales)
+
+# Scatter chart - Quantity vs Revenue
+st.write("Quantity vs Revenue")
+st.scatter_chart(df, x="Quantity", y="Revenue_ZAR")
+'''
+
+st.code(code, language="python")
+
 
 st.divider()
 
